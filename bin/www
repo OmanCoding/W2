@@ -86,5 +86,8 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
+  console.log('المزود يعمل حالياً و يستمع على منفذ '+addr.port);
+  console.log('مللاحظة: يمكن زيارة التطبيق من خلال المتصح عبر');
+  console.log('http://localhost:'+addr.port)
   debug('Listening on ' + bind);
 }

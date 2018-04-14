@@ -8,35 +8,36 @@ block content
       a(href='/ONAEconomicNews')
           img.hublogo(src='https://www.omannews.gov.om/ona_eng/themes/img/logoRed.png')
       div
-          h2 وكالة الأنباء العمانية
+          h3 وكالة الأنباء العمانية
   .newshub
       a(href='/OmanNews')
           img.hublogo(src='http://2016.omandaily.om/wp-content/uploads/2017/07/omandailylogo.png')
       div
-          h2 صحيفة عمان
+          h3 صحيفة عمان
   .newshub
       a(href='/AlwatanNews')
           img.hublogo(src='http://alwatan.com/files/2013/12/logo1.jpg')
       div
-          h2 الوطن
+          h3 الوطن
   .newshub
       a(href='/ShabibaEconomicNews')
           img.hublogo(src='http://www.shabiba.com/images/xlogo.png.pagespeed.ic.WQeiCM-xqo.webp')
       div
-          h2 الشبيبة
+          h3 الشبيبة
   style.
       .newshub {
           margin-left: 10px;
           padding: 10px;
           border: 2px solid grey;
           width: 150px;
-          height:100px;
+          min-height:150px;
           float: right;
           text-align:center;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
       }
       .hublogo {
           max-width:100%;
           max-height:100%;
-          height:100%;
-          width:100%;
       }
